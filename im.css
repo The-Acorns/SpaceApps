@@ -1,0 +1,14 @@
+body{
+	margin: 10px;
+}
+p{
+	border: solid 2px blue;
+	padding: 3px;
+	border-radius: 25px;
+}
+img{
+	float: left;
+	padding-right: 5px;
+	margin: 5px;
+	padding-left: 12px; 
+}

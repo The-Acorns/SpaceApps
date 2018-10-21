@@ -7,15 +7,19 @@
 	<script type="text/javascript" src="space.js"></script>
 	<meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous">	
+
+</script>
 </head>
 <body id="para">
 	
 <center>
-	<video autoplay muted loop id="svid" class="pos" src="loop.mp4" autoplay></video>
+	<video autoplay muted loop id="svid" class="pos thanos" src="loop.mp4" autoplay></video>
 <div class="pos">
-	<h1 class="">Enter Into The Cryosphere</h1>
-
-
+	<h1 class="thanos">Enter Into The Cryosphere</h1>
 <br>
 <br>
 <br>
@@ -28,11 +32,15 @@
 <br>
 <br>
 <br>
-	<button onclick="reveal();" class="btn btn-primary" >Click Me!</button>
+<br>
+<br>
+	<button id="reveal" class="btn btn-primary thanos" >Click Me!</button>
 </div>
  </center>
 <script type="text/javascript">
-
+$("#reveal").click(function() {
+    $(".thanos").fadeOut(3000);
+});
 </script>
 
 
@@ -42,8 +50,8 @@
   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
   crossorigin="anonymous">	
 
-function reveal(){
+$("#reveal").click(function() {
     $("video").fadeOut(3000);
-}</script>
+});</script>
 </body>
 </html>
